@@ -1,0 +1,95 @@
+/* Toàn bộ trang */
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 20px;
+  background: #f8f9fb;
+  color: #333;
+}
+
+/* center all chart SVGs */
+#chart1 svg, #chart2 svg, #chart3 svg, #chart4 svg, #chart5 svg,
+#chart6 svg, #chart7 svg, #chart8 svg, #chart9 svg, #chart10 svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  font-size: 13px;
+}
+
+/* Tiêu đề */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #004d66;
+}
+
+/* Container cho dashboard chart9 */
+#chart9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  row-gap: 60px;
+  align-items: start;
+  justify-items: center;
+}
+
+/* Khung từng chart nhỏ */
+#chart9 svg {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 10px;
+}
+/*Khoảng cách giữa các chart*/
+.chart-container {
+  margin-bottom: 50px;
+  clear: both;
+}
+
+.chart-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Thanh bar */
+.bar {
+  fill: steelblue;
+  transition: fill 0.2s ease-in-out;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
+/* Label giá trị */
+.label {
+  font-size: 12px;
+  fill: #120000bb;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background: #fff;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 13px;
+  pointer-events: none;
+  line-height: 1.4em;
+}
